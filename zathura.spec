@@ -1,3 +1,4 @@
+%define debug_package %{nil}
 Summary:	A lightweight PDF viewer
 Name:		zathura
 Version:	0.0.8.5
@@ -39,4 +40,11 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 %{_bindir}/*
 %{_mandir}/man*/*
 %{_datadir}/applications/*
+
+
+
+%changelog
+* Thu May 24 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.0.8.5-1
++ Revision: 800395
+- imported package zathura
 
