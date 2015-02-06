@@ -2,7 +2,7 @@
 Summary:	A lightweight PDF viewer
 Name:		zathura
 Version:	0.0.8.5
-Release:	1
+Release:	2
 Group:		Office
 License:	zlib
 URL:		http://zathura.pwmt.org/projects/zathura
