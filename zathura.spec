@@ -10,6 +10,7 @@ Source0:  https://pwmt.org/projects/zathura/download/zathura-%{version}.tar.xz
 # Old
 #Source0:	http://zathura.pwmt.org/attachments/download/10/%{name}-%{version}.tar.xz
 
+BuildRequires:  meson
 BuildRequires:	desktop-file-utils
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(glib-2.0)
@@ -24,18 +25,14 @@ an easy usage that mainly focuses on keyboard interaction.
 
 %prep
 %setup -q
-# don't rebuid at install time
-sed -ie "s/install:\ all/install:\ /g" Makefile
 
 %build
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
-mkdir -p %{buildroot}%{_datadir}/applications
-install -m 644 %{name}.desktop %{buildroot}%{_datadir}/applications/
-desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 
 %files
 %doc LICENSE README
