@@ -15,6 +15,7 @@ BuildRequires:  librsvg2
 BuildRequires:  meson
 BuildRequires:	desktop-file-utils
 BuildRequires:	pkgconfig(cairo)
+BuildRequires:  pkgconfig(check)
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(poppler-glib)
