@@ -16,6 +16,7 @@ BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(poppler-glib)
+BuildRequires:  pkgconfig(girara-gtk3)
 
 %description
 Zathura is a highly configurable and functional PDF viewer based on the Poppler
