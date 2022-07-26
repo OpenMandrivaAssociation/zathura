@@ -43,7 +43,7 @@ an easy usage that mainly focuses on keyboard interaction.
 
 
 %files
-%doc LICENSE README
+%doc LICENSE README*
 %{_bindir}/*
 %{_mandir}/man*/*
 %{_datadir}/applications/*
