@@ -56,6 +56,7 @@ an easy usage that mainly focuses on keyboard interaction.
 %{_datadir}/metainfo/org.pwmt.zathura.appdata.xml
 %{_datadir}/zsh/site-functions/_zathura
 %{_iconsdir}/hicolor/*x*/apps/org.pwmt.zathura.png
+%{_iconsdir}/hicolor/scalable/apps/org.pwmt.zathura.svg
 
 
 
