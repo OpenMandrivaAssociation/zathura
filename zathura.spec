@@ -22,6 +22,7 @@ BuildRequires:  pkgconfig(girara-gtk3)
 BuildRequires:  pkgconfig(libseccomp)
 BuildRequires:  pkgconfig(sqlite3)
 BuildRequires:  pkgconfig(synctex)
+BuildRequires:  python3dist(sphinx)
 
 %description
 Zathura is a highly configurable and functional PDF viewer based on the Poppler
