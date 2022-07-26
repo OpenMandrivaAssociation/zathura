@@ -41,12 +41,22 @@ an easy usage that mainly focuses on keyboard interaction.
 %install
 %meson_install
 
+%find_lang %{name}
 
-%files
+%files -f %{name}.lang
 %doc LICENSE README*
 %{_bindir}/*
 %{_mandir}/man*/*
 %{_datadir}/applications/*
+%{_includedir}/zathura/
+%{_libdir}/pkgconfig/zathura.pc
+%{_datadir}/bash-completion/completions/zathura
+%{_datadir}/dbus-1/interfaces/org.pwmt.zathura.xml
+%{_datadir}/fish/vendor_completions.d/zathura.fish
+%{_datadir}/metainfo/org.pwmt.zathura.appdata.xml
+%{_datadir}/zsh/site-functions/_zathura
+%{_iconsdir}/hicolor/*x*/apps/org.pwmt.zathura.png
+
 
 
 
