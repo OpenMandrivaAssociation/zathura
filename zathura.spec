@@ -1,12 +1,14 @@
 %define debug_package %{nil}
 Summary:	A lightweight PDF viewer
 Name:		zathura
-Version:	0.0.8.5
-Release:	2
+Version:	0.4.9
+Release:	1
 Group:		Office
 License:	zlib
 URL:		http://zathura.pwmt.org/projects/zathura
-Source0:	http://zathura.pwmt.org/attachments/download/10/%{name}-%{version}.tar.xz
+Source0:  https://pwmt.org/projects/zathura/download/zathura-%{version}.tar.xz
+# Old
+#Source0:	http://zathura.pwmt.org/attachments/download/10/%{name}-%{version}.tar.xz
 
 BuildRequires:	desktop-file-utils
 BuildRequires:	pkgconfig(cairo)
