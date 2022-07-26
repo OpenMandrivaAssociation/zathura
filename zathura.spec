@@ -10,6 +10,7 @@ Source0:  https://pwmt.org/projects/zathura/download/zathura-%{version}.tar.xz
 # Old
 #Source0:	http://zathura.pwmt.org/attachments/download/10/%{name}-%{version}.tar.xz
 
+BuildRequires:  librsvg2
 BuildRequires:  meson
 BuildRequires:	desktop-file-utils
 BuildRequires:	pkgconfig(cairo)
