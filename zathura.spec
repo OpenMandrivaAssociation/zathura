@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 Summary:	A lightweight PDF viewer
 Name:		zathura
-Version:	0.5.2
+Version:	0.5.4
 Release:	1
 Group:		Office
 License:	zlib
