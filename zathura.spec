@@ -5,7 +5,7 @@ Version:	0.5.4
 Release:	1
 Group:		Office
 License:	zlib
-URL:		http://zathura.pwmt.org/projects/zathura
+URL:		https://zathura.pwmt.org/projects/zathura
 Source0:  https://pwmt.org/projects/zathura/download/zathura-%{version}.tar.xz
 # Old
 #Source0:	http://zathura.pwmt.org/attachments/download/10/%{name}-%{version}.tar.xz
