@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 Summary:	A lightweight PDF viewer
 Name:		zathura
-Version:	0.5.4
+Version:	0.5.12
 Release:	1
 Group:		Office
 License:	zlib
@@ -9,6 +9,8 @@ URL:		https://zathura.pwmt.org/projects/zathura
 Source0:  https://pwmt.org/projects/zathura/download/zathura-%{version}.tar.xz
 # Old
 #Source0:	http://zathura.pwmt.org/attachments/download/10/%{name}-%{version}.tar.xz
+
+BuildSystem:	meson
 
 BuildRequires:  appstream-util
 BuildRequires:  librsvg2
@@ -23,6 +25,7 @@ BuildRequires:  pkgconfig(girara-gtk3)
 BuildRequires:  pkgconfig(libseccomp)
 BuildRequires:  pkgconfig(sqlite3)
 BuildRequires:  pkgconfig(synctex)
+BuildRequires:  pkgconfig(libmagic)
 BuildRequires:  python3dist(sphinx)
 
 %description
@@ -32,11 +35,8 @@ application that provides a minimalist and space saving interface as well as
 an easy usage that mainly focuses on keyboard interaction.
 
 %prep
-%setup -q
+%autosetup -p1
 
-%build
-%meson
-%meson_build
 
 %install
 %meson_install
@@ -57,12 +57,3 @@ an easy usage that mainly focuses on keyboard interaction.
 %{_datadir}/zsh/site-functions/_zathura
 %{_iconsdir}/hicolor/*x*/apps/org.pwmt.zathura.png
 %{_iconsdir}/hicolor/scalable/apps/org.pwmt.zathura.svg
-
-
-
-
-%changelog
-* Thu May 24 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.0.8.5-1
-+ Revision: 800395
-- imported package zathura
-
